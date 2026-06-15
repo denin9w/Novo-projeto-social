@@ -47,11 +47,14 @@ section.navegador a{
     margin-right: 20px;
 }
 
-.imgnav{
-    width: 65px;
+section.navegador a img{
+    width: 50px;
     border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.399) ;
 }
-section.navegador a:hover{
-    transform: scale(1.2);
-    transition: 1s;
+section.navegador img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.623);
+    transform:translate(-3px,-3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.592) ;
+    transition: transform .3s;
 }
