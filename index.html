@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Document</title>
+
+</head>
+
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    html, body{
+    margin: 0;
+    padding: 0;
+
+    /* Mantém o scroll funcionando */
+    overflow-y: scroll;
+
+    /* Firefox */
+    scrollbar-width: none;
+
+    /* Internet Explorer e Edge antigo */
+    -ms-overflow-style: none;
+    }
+
+/* Chrome, Edge, Safari */
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar{
+    width: 0;
+    display: none;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image:url(imagens/fundo-madeira.jpg);
+    }
+ 
+    .iphone{
+        width: 100vw;
+        height: 100vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navegador{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content:right;
+        margin-right: 20px;
+    }
+    .navegador a{
+        padding: 10px 0px;
+
+    }
+    .imgnav{
+        border-radius:50% ;
+        width: 65px;
+        overflow: hidden;
+        transition: transform 0.4s ease-in-out;
+    }
+    .navegador a:hover{
+        transform: scale(1.15);
+        transition: 1s;
+    }
+    .conteudo{
+        display: inline-block;
+        position: absolute;
+    }
+    .conteudo iframe{
+        width: 290px;
+        height: 470px;
+        border: none;
+    }
+
+</style>
+
+
+
+<body>
+    
+    <main class="container">
+         <section class="iphone">
+            <img src="imagens/frame-iphone.png" alt="modelo-iphone">
+            <div class="conteudo">
+                <iframe src="imagens/tela-home.jpg" frameborder="0" ></iframe>
+            </div>
+        </section>
+        <nav class="navegador">
+                <a href="#"><img class="imgnav" src="imagens/logo-home.jpg" alt="Casa"></a>
+                <a href="#"><img class="imgnav" src="imagens/logo-youtube.jpg" alt="you tube"></a>
+                <a href="#"><img class="imgnav" src="imagens/logo-github.jpg" alt="git"></a>
+                <a href="#"><img class="imgnav" src="imagens/logo-instagram.jpg" alt="insta"></a>
+                <a href="#"><img class="imgnav" src="imagens/logo-twitter.jpg" alt="twitter"></a>
+                <a href="#"><img class="imgnav" src="imagens/logo-facebook.jpg" alt="Face"></a>
+            </nav>
+       
+
+    </main>
+
+
+
+</body>
+
+
+</html>
